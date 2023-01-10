@@ -62,5 +62,31 @@ namespace TennisBookings.Web.Tests.Controllers
             var model = Assert.IsAssignableFrom<HomeViewModel>(viewResult.ViewData.Model);
             Assert.Contains("We're sorry but it's raining here.", model.WeatherDescription);
         }
+
+        [Fact]
+        public void ReturnsExpectedViewModel_EnableWeatherForecastFalse()
+        {
+            var mockWeatherForecaster = new Mock<IWeatherForecaster>();
+
+            mockWeatherForecaster.Setup(w => w.GetCurrentWeather()).Returns(new WeatherResult
+            {
+                WeatherCondition = WeatherCondition.Rain
+            });
+
+            var options = new Mock<IOptions<FeaturesConfiguration>>();
+
+            options.Setup(t => t.Value).Returns(new FeaturesConfiguration()
+            {
+                EnableWeatherForecast = false
+            });
+
+            var sut = new HomeController(mockWeatherForecaster.Object, options.Object);
+
+            var result = sut.Index();
+
+            var viewResult = Assert.IsType<ViewResult>(result);
+            var model = Assert.IsAssignableFrom<HomeViewModel>(viewResult.ViewData.Model);
+            Assert.Null(model.WeatherDescription);
+        }
     }
 }
