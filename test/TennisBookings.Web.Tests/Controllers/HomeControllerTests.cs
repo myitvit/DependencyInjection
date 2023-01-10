@@ -21,12 +21,14 @@ namespace TennisBookings.Web.Tests.Controllers
                 WeatherCondition = WeatherCondition.Sun
             });
 
-            var featureConfiguration = new FeaturesConfiguration
+            var options = new Mock<IOptions<FeaturesConfiguration>>();
+
+            options.Setup(t => t.Value).Returns(new FeaturesConfiguration()
             {
                 EnableWeatherForecast = true
-            };
+            });
 
-            var sut = new HomeController(mockWeatherForecaster.Object, featureConfiguration);
+            var sut = new HomeController(mockWeatherForecaster.Object, options.Object);
 
             var result = sut.Index();
 
@@ -45,12 +47,14 @@ namespace TennisBookings.Web.Tests.Controllers
                 WeatherCondition = WeatherCondition.Rain
             });
 
-            var featureConfiguration = new FeaturesConfiguration
+            var options = new Mock<IOptions<FeaturesConfiguration>>();
+
+            options.Setup(t => t.Value).Returns(new FeaturesConfiguration()
             {
                 EnableWeatherForecast = true
-            };
+            });
 
-            var sut = new HomeController(mockWeatherForecaster.Object, featureConfiguration);
+            var sut = new HomeController(mockWeatherForecaster.Object, options.Object);
 
             var result = sut.Index();
 

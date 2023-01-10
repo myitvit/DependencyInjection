@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Options;
 using TennisBookings.Web.Configuration;
 using TennisBookings.Web.Services;
 using TennisBookings.Web.ViewModels;
@@ -10,10 +11,10 @@ namespace TennisBookings.Web.Controllers
         private readonly IWeatherForecaster weatherForecaster;
         private readonly FeaturesConfiguration featuresConfiguration;
 
-        public HomeController(IWeatherForecaster weatherForecaster, FeaturesConfiguration featuresConfiguration)
+        public HomeController(IWeatherForecaster weatherForecaster, IOptions<FeaturesConfiguration> options)
         {
             this.weatherForecaster = weatherForecaster;
-            this.featuresConfiguration = featuresConfiguration;
+            this.featuresConfiguration = options.Value;
         }
 
         [Route("")]
