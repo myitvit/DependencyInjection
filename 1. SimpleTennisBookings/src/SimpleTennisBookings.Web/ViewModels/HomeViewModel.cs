@@ -1,5 +1,5 @@
 ﻿
-namespace TennisBookings.Web.ViewModels
+namespace SimpleTennisBookings.Web.ViewModels
 {
     public class HomeViewModel
     {

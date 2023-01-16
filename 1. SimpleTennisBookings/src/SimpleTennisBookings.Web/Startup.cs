@@ -4,10 +4,10 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using System;
-using TennisBookings.Web.Services;
-using TennisBookings.Web.Configuration;
+using SimpleTennisBookings.Web.Services;
+using SimpleTennisBookings.Web.Configuration;
 
-namespace TennisBookings.Web
+namespace SimpleTennisBookings.Web
 {
     public class Startup
     {

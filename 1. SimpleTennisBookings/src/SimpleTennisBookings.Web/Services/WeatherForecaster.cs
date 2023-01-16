@@ -1,5 +1,5 @@
 ﻿
-namespace TennisBookings.Web.Services
+namespace SimpleTennisBookings.Web.Services
 {
     public class WeatherForecaster : IWeatherForecaster
     {

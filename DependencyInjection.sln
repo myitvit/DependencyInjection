@@ -5,13 +5,13 @@ VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{B5BA0B59-8D91-4F07-8090-34BDE097EFC9}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TennisBookings.Web", "1. TennisBookings\src\TennisBookings.Web\TennisBookings.Web.csproj", "{74A1EEEE-6FB1-482E-98AD-C1BC19078448}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleTennisBookings.Web", "1. SimpleTennisBookings\src\SimpleTennisBookings.Web\SimpleTennisBookings.Web.csproj", "{74A1EEEE-6FB1-482E-98AD-C1BC19078448}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{78B53578-C0E1-4D39-836A-F5C534421AE9}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TennisBookings.Web.Tests", "1. TennisBookings\test\TennisBookings.Web.Tests\TennisBookings.Web.Tests.csproj", "{F622D178-CE8F-48B3-A73A-AB68FB5C3B8A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleTennisBookings.Web.Tests", "1. SimpleTennisBookings\test\SimpleTennisBookings.Web.Tests\SimpleTennisBookings.Web.Tests.csproj", "{F622D178-CE8F-48B3-A73A-AB68FB5C3B8A}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. TennisBookings", "1. TennisBookings", "{004996DC-E465-4D90-8580-F179E8B7E3B5}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. SimpleTennisBookings", "1. SimpleTennisBookings", "{004996DC-E465-4D90-8580-F179E8B7E3B5}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. LifetimeDemonstration", "2. LifetimeDemonstration", "{034587CF-BE39-452A-9809-21EBFA24F607}"
 EndProject

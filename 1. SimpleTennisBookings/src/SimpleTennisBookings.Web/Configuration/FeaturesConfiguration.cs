@@ -1,4 +1,4 @@
-﻿namespace TennisBookings.Web.Configuration
+﻿namespace SimpleTennisBookings.Web.Configuration
 {
     public class FeaturesConfiguration
     {

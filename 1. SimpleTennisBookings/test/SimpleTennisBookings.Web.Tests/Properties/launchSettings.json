@@ -1,6 +1,6 @@
 {
   "profiles": {
-    "TennisBookings.Web.Tests": {
+    "SimpleTennisBookings.Web.Tests": {
       "commandName": "Project",
       "launchBrowser": true,
       "environmentVariables": {

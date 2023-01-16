@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 
-namespace TennisBookings.Web
+namespace SimpleTennisBookings.Web
 {
     public class Program
     {

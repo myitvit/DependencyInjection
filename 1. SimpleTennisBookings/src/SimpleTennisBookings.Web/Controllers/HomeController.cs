@@ -1,10 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
-using TennisBookings.Web.Configuration;
-using TennisBookings.Web.Services;
-using TennisBookings.Web.ViewModels;
+using SimpleTennisBookings.Web.Configuration;
+using SimpleTennisBookings.Web.Services;
+using SimpleTennisBookings.Web.ViewModels;
 
-namespace TennisBookings.Web.Controllers
+namespace SimpleTennisBookings.Web.Controllers
 {
     public class HomeController : Controller
     {
