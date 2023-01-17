@@ -6,6 +6,7 @@ using Microsoft.Extensions.DependencyInjection;
 using System;
 using SimpleTennisBookings.Web.Services;
 using SimpleTennisBookings.Web.Configuration;
+using Microsoft.Extensions.DependencyInjection.Extensions;
 
 namespace SimpleTennisBookings.Web
 {
@@ -20,7 +21,8 @@ namespace SimpleTennisBookings.Web
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddTransient<IWeatherForecaster, AmazingWeatherForecaster>();
+            services.AddTransient<IWeatherForecaster, WeatherForecaster>();
+            services.TryAddTransient<IWeatherForecaster, AmazingWeatherForecaster>();
 
             services.Configure<FeaturesConfiguration>(Configuration.GetSection("Features"));
 
