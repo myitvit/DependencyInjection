@@ -22,7 +22,8 @@ namespace SimpleTennisBookings.Web
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddSingleton<IWeatherForecaster, WeatherForecaster>();
-            services.Replace(ServiceDescriptor.Singleton<IWeatherForecaster, AmazingWeatherForecaster>());
+            services.AddSingleton<IWeatherForecaster, AmazingWeatherForecaster>();
+            services.RemoveAll<IWeatherForecaster>();
 
             services.Configure<FeaturesConfiguration>(Configuration.GetSection("Features"));
 
